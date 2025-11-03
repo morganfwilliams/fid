@@ -17,11 +17,37 @@
             border-bottom: 1px solid #57b1dc;
             margin-top: 30px;
         }
-h2{
-color: #d1633c;
-font-size: 1em;
-}
- footer {
+        h2 {
+            color: #d1633c;
+            font-size: 1em;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+        nav li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #d1633c;
+        }
+        .order-section {
+            text-align: center;
+            margin: 40px 0;
+        }
+        .ordernow {
+            width: 300px;  /* adjust size if needed */
+            height: auto;
+            cursor: pointer;
+        }
+        footer {
             text-align: center;
             border-top: 1px solid #57b1dc;
             margin-top: 40px;
@@ -29,28 +55,29 @@ font-size: 1em;
             font-size: 0.9em;
             color: #333;
         }
-footer img {
-width: 40px;
-height: 40px;
-margin-left: .5em;
-margin-right: .5em;
-}
+        footer img {
+            width: 40px;
+            height: 40px;
+            margin-left: .5em;
+            margin-right: .5em;
+        }
     </style>
 </head>
+
 <body>
-   <h1> <img src="blackgoose.png" alt="Black Goose Logo" class="logo">
+    <h1>
+        <img src="blackgoose.png" alt="Black Goose Logo" class="logo"><br>
+        Black Goose Bistro
+    </h1>
 
-
-    <br>Black Goose Bistro</h1>
-
-<nav>
+    <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="menu.html">Menu</a></li>
             <li><a href="bgnews.html">News</a></li>
             <li><a href="contract.html">Contact</a></li>
-<li><a href="gallery.html">Gallery</a></li>
- <li><a href="jenskitch.html">Jens's Kitchen</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="jenskitch.html">Jen's Kitchen</a></li>
         </ul>
     </nav>
 
@@ -62,18 +89,25 @@ margin-right: .5em;
 
     <h2>Location and Hours</h2>
     <p>Seekonk, Massachusetts;<br>
-    Monday through Thursday 11am to 9pm; <BR>Friday and Saturday, 11am to midnight</p>
-<footer>
-     <p>
-       Please visit our social media pages: <br>
-       <a href="https://www.facebook.com" target="_blank">
-         <img src="facebook.svg" alt="facebook logo" class="icon">
-<img src="twitter.svg" alt="twitter logo" class="icon">
-<img src="instagram.svg" alt="twitter logo" class="icon">
-       </a>
-     </p>
-   </footer>
+    Monday through Thursday 11am to 9pm;<br>
+    Friday and Saturday, 11am to midnight</p>
+
+    <!-- Order Button Section -->
+    <div class="order-section">
+        <a href="pizza.html">
+            <img src="ordernow.png" alt="Order Your Pizza Now" class="ordernow">
+        </a>
+    </div>
+
+    <footer>
+        <p>
+            Please visit our social media pages: <br>
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="facebook.svg" alt="facebook logo" class="icon">
+                <img src="twitter.svg" alt="twitter logo" class="icon">
+                <img src="instagram.svg" alt="instagram logo" class="icon">
+            </a>
+        </p>
+    </footer>
 </body>
 </html>
-
-
