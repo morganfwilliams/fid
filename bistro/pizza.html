@@ -4,18 +4,59 @@
   <meta charset="utf-8">
   <title>Blackstone Bistro: Pizza-on-Demand</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- tiny optional styling; remove if your instructor wants pure HTML -->
   <style>
-    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; line-height: 1.4; margin: 2rem; }
-    form { max-width: 680px; }
-    fieldset { border: 1px solid #ccc; padding: 1rem; margin: 1rem 0; }
-    legend { font-weight: 600; }
-    label { display: block; margin: .5rem 0 .25rem; }
-    .inline label { display: inline-block; margin-right: 1rem; }
-    input[type="text"], input[type="email"], input[type="tel"], input[type="number"], textarea, select {
-      width: 100%; max-width: 80%; padding: .5rem; border: 1px solid #bbb; border-radius: 4px;
+    body { 
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; 
+      line-height: 1.4; 
+      margin: 2rem; 
     }
-    button { padding: .6rem 1rem; margin-right: .5rem; }
+    form { 
+      max-width: 680px; 
+    }
+    fieldset { 
+      border: 1px solid #ccc; 
+      padding: 1rem; 
+      margin: 1rem 0; 
+    }
+    legend { 
+      font-weight: 600; 
+    }
+    label { 
+      display: block; 
+      margin: .5rem 0 .25rem; 
+    }
+    .inline label { 
+      display: inline-block; 
+      margin-right: 1rem; 
+    }
+    input[type="text"], input[type="email"], input[type="tel"], textarea, select {
+      width: 100%; 
+      max-width: 80%; 
+      padding: .5rem; 
+      border: 1px solid #bbb; 
+      border-radius: 4px;
+    }
+    button { 
+      padding: .6rem 1rem; 
+      margin-right: .5rem; 
+    }
+
+    /* Return Home Link Styling */
+    .return-home {
+      text-align: center;
+      margin-top: 40px;
+    }
+    .return-home a {
+      text-decoration: none;
+      color: white;
+      background-color: #d1633c;
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+    .return-home a:hover {
+      background-color: #a04222;
+    }
   </style>
 </head>
 <body>
@@ -59,37 +100,40 @@
   </fieldset>
 
   <fieldset>
-  <legend>Toppings <em>(Choose as many as you want):</em></legend>
-  <div class="inline">
-    <label><input type="checkbox" name="toppings" value="red-sauce" checked> Red sauce</label>
-    <label><input type="checkbox" name="toppings" value="white-sauce"> White sauce</label>
-    <label><input type="checkbox" name="toppings" value="mozzarella"> Mozzarella Cheese</label>
-    <label><input type="checkbox" name="toppings" value="pepperoni"> Pepperoni</label>
-    <label><input type="checkbox" name="toppings" value="mushrooms"> Mushrooms</label>
-    <label><input type="checkbox" name="toppings" value="peppers"> Peppers</label>
-    <label><input type="checkbox" name="toppings" value="anchovies"> Anchovies</label>
-  </div>
-</fieldset>
-
+    <legend>Toppings <em>(Choose as many as you want):</em></legend>
+    <div class="inline">
+      <label><input type="checkbox" name="toppings" value="red-sauce" checked> Red sauce</label>
+      <label><input type="checkbox" name="toppings" value="white-sauce"> White sauce</label>
+      <label><input type="checkbox" name="toppings" value="mozzarella"> Mozzarella Cheese</label>
+      <label><input type="checkbox" name="toppings" value="pepperoni"> Pepperoni</label>
+      <label><input type="checkbox" name="toppings" value="mushrooms"> Mushrooms</label>
+      <label><input type="checkbox" name="toppings" value="peppers"> Peppers</label>
+      <label><input type="checkbox" name="toppings" value="anchovies"> Anchovies</label>
+    </div>
+  </fieldset>
 
   <fieldset>
     <legend>Number</legend>
-   <label for="qty">How many pizzas? *</label>
-<select id="qty" name="quantity" required>
-  <option value="">Select</option>
-  <option value="1">1</option>
-  <option value="2">2</option>
-  <option value="3">3</option>
-  <option value="4">4</option>
-  <option value="5">5</option>
-  <option value="6">6</option>
-</select>
-
+    <label for="qty">How many pizzas? *</label>
+    <select id="qty" name="quantity" required>
+      <option value="">Select</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+    </select>
   </fieldset>
 
   <button type="submit">Place Order</button>
   <button type="reset">Reset</button>
 </form>
+
+<!-- Return Home Button -->
+<div class="return-home">
+  <a href="index.html">Return to Home</a>
+</div>
 
 </body>
 </html>
