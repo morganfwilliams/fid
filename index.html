@@ -1,79 +1,155 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Black Goose Bistro</title>
-    <style>
-        body {
-            background-color: #faf2e4;
-            margin: 0 10%;
-            font-family: sans-serif;
-        }
-        h1 {
-            text-align: center;
-            font-family: serif;
-            font-weight: normal;
-            text-transform: uppercase;
-            border-bottom: 1px solid #57b1dc;
-            margin-top: 30px;
-        }
-h2{
-color: #d1633c;
-font-size: 1em;
-}
- footer {
-            text-align: center;
-            border-top: 1px solid #57b1dc;
-            margin-top: 40px;
-            padding-top: 1em;
-            font-size: 0.9em;
-            color: #333;
-        }
-footer img {
-width: 40px;
-height: 40px;
-margin-left: .5em;
-margin-right: .5em;
-}
-    </style>
+<meta charset="utf-8">
+<title>Morgan's Resume</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  body {
+    background-color: #e7f6da;
+    color: #2b2b2b;
+    font-family: 'Poppins', 'Century Gothic', sans-serif;
+    margin: 40px;
+  }
+  h1 {
+    text-align: center;
+    color: #4b6043;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
+    font-size: 2.5em;
+  }
+  h2 {
+    text-align: center;
+    text-decoration: underline;
+    color: #6b8e5b;
+    font-family: 'Raleway', sans-serif;
+  }
+  hr {
+    border: none;
+    height: 2px;
+    background-color: #8cab73;
+    width: 60%;
+    margin: 10px auto 30px;
+  }
+  ul {
+    list-style-type: disc;
+    padding-left: 40px;
+    margin: 10px 0 24px;
+  }
+  p {
+    max-width: 700px;
+    margin: 0 auto 20px;
+    line-height: 1.6;
+  }
+  .center-text {
+    text-align: center;
+  }
+  a {
+    color: #4b6043;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  a:hover {
+    text-decoration: underline;
+    color: #6b8e5b;
+  }
+
+  /* Thumbnail gallery */
+  .thumb-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 16px;
+    margin: 24px auto 32px;
+    max-width: 900px;
+  }
+  .thumb {
+    display: inline-block;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 8px rgba(0,0,0,.12);
+    transition: transform .15s ease, box-shadow .15s ease;
+  }
+  .thumb:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0,0,0,.16);
+  }
+  .thumb img {
+    display: block;
+    width: 150px;          /* 50–200px requirement */
+    height: 150px;         /* square */
+    object-fit: cover;     /* crop without distortion */
+  }
+</style>
 </head>
+
 <body>
-   <h1> <img src="blackgoose.png" alt="Black Goose Logo" class="logo">
+  <h1>Morgan’s Resume</h1>
+  <hr>
+
+  <h2>About Me</h2>
+  <p class="center-text">
+    Hello and welcome to my page! Below you will find my experience, some of my work, and what I hope to learn in the future!
+    I have a degree in education already and spent many years coaching softball at the collegiate level.
+    I have been a completely self-taught product photographer for the last seven years.
+    We sell products to Michaels, Hobby Lobby, Walmart, etc.
+    I have decided to go back to school to learn more about graphic design to help further my abilities.
+    With more experience I hope to be able to help in other aspects at my company.
+  </p>
+
+  <h2>Photoshop Skills</h2>
+  <ul>
+    <li>Color Correcting</li>
+    <li>Removing Backgrounds</li>
+    <li>Adding multiple images into one</li>
+  </ul>
+
+  <h2>My Work That Can Be Found Online</h2>
+  <p class="center-text">
+    <a href="https://www.michaels.com/product/mini-pumpkin-candy-baskets-4ct-by-ashland-10777545" target="_blank" rel="noopener">
+      Mini Pumpkin Candy Baskets – 4ct by Ashland
+    </a>
+  </p>
+  <p class="center-text">
+    <a href="https://www.michaels.com/product/mini-led-spooky-house-decoration-by-ashland-10777743" target="_blank" rel="noopener">
+      Mini LED Spooky House Decoration by Ashland
+    </a>
+  </p>
+  <p class="center-text">
+    <a href="https://www.michaels.com/product/classic-whipped-paint-by-creatology-10781331" target="_blank" rel="noopener">
+      Classic Whipped Paint by Creatology
+    </a>
+  </p>
 
 
-    <br>Black Goose Bistro</h1>
+  <h2>Personal Photography</h2>
+  <nav class="thumb-grid" aria-label="Personal photography thumbnails">
+    <a class="thumb" href="photo-1.html"><img src="photo_1.jpg" alt="Product photo 1" width="150" height="150" loading="lazy"></a>
+    <a class="thumb" href="photo-2.html"><img src="photo_2.jpg" alt="Product photo 2" width="150" height="150" loading="lazy"></a>
+    <a class="thumb" href="photo-3.html"><img src="photo_3.jpg" alt="Product photo 3" width="150" height="150" loading="lazy"></a>
+    <a class="thumb" href="photo-4.html"><img src="photo_4.jpg" alt="Product photo 4" width="150" height="150" loading="lazy"></a>
+    <a class="thumb" href="photo-5.html"><img src="photo_5.jpg" alt="Product photo 5" width="150" height="150" loading="lazy"></a>
+    <a class="thumb" href="photo-6.html"><img src="photo_6.jpg" alt="Product photo 6" width="150" height="150" loading="lazy"></a>
+    <a class="thumb" href="photo-7.html"><img src="photo_7.jpg" alt="Product photo 7" width="150" height="150" loading="lazy"></a>
+    <a class="thumb" href="photo-8.html"><img src="photo_8.jpg" alt="Product photo 8" width="150" height="150" loading="lazy"></a>
+    <a class="thumb" href="photo-9.html"><img src="photo_9.jpg" alt="Product photo 9" width="150" height="150" loading="lazy"></a>
+    <a class="thumb" href="photo-10.html"><img src="photo_10.jpg" alt="Product photo 10" width="150" height="150" loading="lazy"></a>
+    <a class="thumb" href="photo-11.html"><img src="photo_11.jpg" alt="Product photo 11" width="150" height="150" loading="lazy"></a>
+  </nav>
 
-<nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="bgnews.html">News</a></li>
-            <li><a href="contract.html">Contact</a></li>
-<li><a href="gallery.html">Gallery</a></li>
- <li><a href="jenskitch.html">Jens's Kitchen</a></li>
-        </ul>
-    </nav>
+  
+  <h2>Photography for Work</h2>
+  <nav class="thumb-grid" aria-label="Work photography thumbnails">
+    <a class="thumb" href="work-14.html"><img src="photo_14.jpg" alt="Work photography 14" width="150" height="150" loading="lazy"></a>
+    <a class="thumb" href="photo-15.html"><img src="photo_15.jpg" alt="Work photography 15" width="150" height="150" loading="lazy"></a>
+    <a class="thumb" href="photo-16.html"><img src="photo_16.jpg" alt="Work photography 16" width="150" height="150" loading="lazy"></a>
+    <a class="thumb" href="work-17.html"><img src="photo_17.jpg" alt="Work photography 17" width="150" height="150" loading="lazy"></a>
+    <a class="thumb" href="photo-18.html"><img src="photo_18.jpg" alt="Work photography 18" width="150" height="150" loading="lazy"></a>
+    <a class="thumb" href="photo-19.html"><img src="photo_19.jpg" alt="Work photography 19" width="150" height="150" loading="lazy"></a>
+    <a class="thumb" href="photo-20.html"><img src="photo_20.jpg" alt="Work photography 20" width="150" height="150" loading="lazy"></a>
+    <a class="thumb" href="photo-21.html"><img src="photo_21.jpg" alt="Work photography 21" width="150" height="150" loading="lazy"></a>
+    <a class="thumb" href="photo-22.html"><img src="photo_22.jpg" alt="Work photography 22" width="150" height="150" loading="lazy"></a>
+    <a class="thumb" href="photo-23.html"><img src="photo_23.jpg" alt="Work photography 23" width="150" height="150" loading="lazy"></a>
+  </nav>
 
-    <h2>The Restaurant</h2>
-    <p>The Black Goose Bistro offers casual lunch and dinner fare in a relaxed atmosphere. The menu changes regularly to highlight the freshest local ingredients.</p>
-
-    <h2>Catering</h2>
-    <p>You have fun. <em>We'll handle the cooking.</em> Black Goose Catering can handle events from snacks for a meetup to elegant corporate fundraisers.</p>
-
-    <h2>Location and Hours</h2>
-    <p>Seekonk, Massachusetts;<br>
-    Monday through Thursday 11am to 9pm; <BR>Friday and Saturday, 11am to midnight</p>
-<footer>
-     <p>
-       Please visit our social media pages: <br>
-       <a href="https://www.facebook.com" target="_blank">
-         <img src="facebook.svg" alt="facebook logo" class="icon">
-<img src="twitter.svg" alt="twitter logo" class="icon">
-<img src="instagram.svg" alt="twitter logo" class="icon">
-       </a>
-     </p>
-   </footer>
 </body>
 </html>
-
-
