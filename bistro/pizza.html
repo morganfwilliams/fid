@@ -57,6 +57,15 @@
     .return-home a:hover {
       background-color: #a04222;
     }
+
+    /* Confirmation box */
+    #confirmation {
+      margin-top: 1.5rem;
+      padding: 1rem;
+      border-radius: 6px;
+      border: 1px solid #4caf50;
+      background-color: #e8f5e9;
+    }
   </style>
 </head>
 <body>
@@ -130,10 +139,59 @@
   <button type="reset">Reset</button>
 </form>
 
+<!-- Confirmation message -->
+<div id="confirmation" aria-live="polite"></div>
+
 <!-- Return Home Button -->
 <div class="return-home">
   <a href="index.html">Return to Home</a>
 </div>
+
+<script>
+  const form = document.getElementById('pizza-order');
+  const confirmationDiv = document.getElementById('confirmation');
+
+  form.addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    const name = document.getElementById('name').value;
+    const address = document.getElementById('address').value;
+    const phone = document.getElementById('phone').value;
+    const email = document.getElementById('email').value;
+    const instructions = document.getElementById('instructions').value;
+
+    const crust = document.querySelector('input[name="crust"]:checked');
+    const toppingNodes = document.querySelectorAll('input[name="toppings"]:checked');
+    const toppings = Array.from(toppingNodes).map(t => t.parentElement.textContent.trim());
+    const quantity = document.getElementById('qty').value;
+
+    if (!crust || !quantity) {
+      alert('Please choose a crust and number of pizzas.');
+      return;
+    }
+
+    const summaryHtml = `
+      <h2>Order Confirmed ✅</h2>
+      <p>Thank you, <strong>${name || 'Customer'}</strong>! Your order has been received.</p>
+      
+      <h3>Order Details</h3>
+      <ul>
+        <li><strong>Address:</strong> ${address}</li>
+        <li><strong>Phone:</strong> ${phone}</li>
+        <li><strong>Email:</strong> ${email}</li>
+        <li><strong>Crust:</strong> ${crust.parentElement.textContent.trim()}</li>
+        <li><strong>Toppings:</strong> ${toppings.length > 0 ? toppings.join(', ') : 'None'}</li>
+        <li><strong>Number of pizzas:</strong> ${quantity}</li>
+      </ul>
+
+      ${instructions ? `<p><strong>Delivery instructions:</strong> ${instructions}</p>` : ''}
+
+      <p>Your pizza will arrive in about an hour. 🍕</p>
+    `;
+
+    confirmationDiv.innerHTML = summaryHtml;
+  });
+</script>
 
 </body>
 </html>
