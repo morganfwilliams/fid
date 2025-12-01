@@ -1,0 +1,86 @@
+body {
+  background-color: #e7f6da;
+  color: #2b2b2b;
+  font-family: 'Poppins', 'Century Gothic', sans-serif;
+  margin: 40px;
+}
+
+h1 {
+  text-align: center;
+  color: #4b6043;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 1px;
+  font-size: 2.5em;
+}
+
+h2 {
+  text-align: center;
+  text-decoration: underline;
+  color: #6b8e5b;
+  font-family: 'Raleway', sans-serif;
+}
+
+hr {
+  border: none;
+  height: 2px;
+  background-color: #8cab73;
+  width: 60%;
+  margin: 10px auto 30px;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 40px;
+  margin: 10px 0 24px;
+}
+
+p {
+  max-width: 700px;
+  margin: 0 auto 20px;
+  line-height: 1.6;
+}
+
+.center-text {
+  text-align: center;
+}
+
+a {
+  color: #4b6043;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+
+a:hover {
+  text-decoration: underline;
+  color: #6b8e5b;
+}
+
+
+.thumb-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 16px;
+  margin: 24px auto 32px;
+  max-width: 900px;
+}
+
+.thumb {
+  display: inline-block;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, .12);
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+
+.thumb:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, .16);
+}
+
+.thumb img {
+  display: block;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
